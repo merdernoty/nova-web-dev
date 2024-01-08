@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "montserrat", sans-serif;
+  color: theme("colors.foreground");
+  background: theme("colors.foreground");
+  margin: 0;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "montserrat-bold", sans-serif;
+}
+
+p {
+  font-family: "nunito-sans", sans-serif;
+}
+
+strong {
+  font-family: "nunito-sans-semibold", sans-serif;
+}
