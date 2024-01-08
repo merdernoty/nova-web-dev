@@ -4,7 +4,7 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  color: theme("colors.foreground");
+  color: theme("colors.fontcolor");
   background: theme("colors.foreground");
   margin: 0;
   height: 100vh;
