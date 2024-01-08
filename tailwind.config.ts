@@ -16,6 +16,7 @@ const config: Config = {
       },
       colors: {
         foreground: "#19191B",
+        fontcolor:"#FFFFFF"
       },
     },
   },
