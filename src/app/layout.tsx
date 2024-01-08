@@ -5,6 +5,8 @@ import './globals.css'
 import clsx from 'clsx'
 import Container from "@/app/components/Container/Container";
 import Footer from "@/app/components/Footer/Footer";
+import React from "react";
+import Projects from "@/app/components/projects/Projects";
 
 // Montserrat 'regular', 'bold'
 const montserrat = Montserrat({
@@ -49,21 +51,52 @@ export const metadata: Metadata = {
     // 	telephone: true,
     // },
 }
+const projectsData = [
+    {
+        imageUrl: '/img/gregas.jpg',
+        title: 'Project 1',
+        description: ` Description for Project 2Description for Project 2Description for Project 2Description for Project 2`,
+
+    },
+    {
+        imageUrl: '/img/gregas.jpg',
+        title: 'Project 2',
+        description: ` Description for Project 2Description for Project 2Description for Project 2Description for Project 2`,
+
+    },
+    {
+        imageUrl: '/img/gregas.jpg',
+        title: 'Project 2',
+        description: ` Description for Project 2Description for Project 2Description for Project 2Description for Project 2`,
+
+    },
+    {
+        imageUrl: '/img/gregas.jpg',
+        title: 'Project 2',
+        description: ` Description for Project 2Description for Project 2Description for Project 2Description for Project 2`,
+    },
+];
 
 export default function RootLayout({
                                        children,
                                    }: {
-    children: React.ReactNode
+    children: React.ReactNode;
 }) {
     return (
         <html lang="en">
+        <head>
+            <title>Nova developers</title>
+            <link rel="icon" href="/img/icon.ico" type="image/png" />
+        </head>
         <body className={clsx(montserrat.variable, nunito_sans.variable)}>
         {children}
         <Container>
-            <Header/>
-            <Footer/>
+            <Header />
+            <Projects projects={projectsData}  />
+            <Footer />
         </Container>
         </body>
         </html>
-    )
+    );
 }
+
