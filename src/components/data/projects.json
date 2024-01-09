@@ -1,0 +1,22 @@
+[
+	{
+		"imageUrl": "/img/gregas.jpg",
+		"title": "Project 1",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+	},
+	{
+		"imageUrl": "/img/gregas.jpg",
+		"title": "Project 2",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+	},
+	{
+		"imageUrl": "/img/gregas.jpg",
+		"title": "Project 3",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+	},
+	{
+		"imageUrl": "/img/gregas.jpg",
+		"title": "Project 4",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+	}
+]
