@@ -1,12 +1,16 @@
 import type {Metadata} from "next";
-import Header from "./components/Header";
-import { Montserrat, Nunito_Sans } from 'next/font/google'
+
+import {Montserrat, Nunito_Sans} from 'next/font/google'
 import './globals.css'
 import clsx from 'clsx'
-import Container from "@/app/components/Container/Container";
-import Footer from "@/app/components/Footer/Footer";
+
+
 import React from "react";
-import Projects from "@/app/components/projects/Projects";
+import Container from "@/components/Container/Container";
+import Header from "@/components/Header";
+import Projects from "@/components/projects/Projects";
+import Footer from "@/components/Footer/Footer";
+
 
 // Montserrat 'regular', 'bold'
 const montserrat = Montserrat({
@@ -40,8 +44,8 @@ export const metadata: Metadata = {
     // referrer: 'origin-when-cross-origin',
     keywords: ['Next.js', 'React', 'JavaScript'],
     authors: [
-        { name: 'Vladyslav Tesliuk', url: 'https://github.com/Lordpluha' },
-        { name: 'Igor Zimin', url: 'https://github.com/merdernoty' }
+        {name: 'Vladyslav Tesliuk', url: 'https://github.com/Lordpluha'},
+        {name: 'Igor Zimin', url: 'https://github.com/merdernoty'}
     ],
     creator: 'https://github.com/Roma8642',
     publisher: 'https://github.com/Roma8642',
@@ -86,14 +90,14 @@ export default function RootLayout({
         <html lang="en">
         <head>
             <title>Nova developers</title>
-            <link rel="icon" href="/img/icon.ico" type="image/png" />
+            <link rel="icon" href="/img/icon.ico" type="image/png"/>
         </head>
         <body className={clsx(montserrat.variable, nunito_sans.variable)}>
         {children}
         <Container>
-            <Header />
-            <Projects projects={projectsData}  />
-            <Footer />
+            <Header/>
+            <Projects projects={projectsData}/>
+            <Footer/>
         </Container>
         </body>
         </html>
