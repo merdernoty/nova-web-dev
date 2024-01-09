@@ -16,7 +16,7 @@ const Info: React.FC<InfoProps> = ({ mainText, subText }) =>{
                             <p
                                 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight font-bold leading-loose text-white"
                             > {mainText}
-                                </p>{subText}
+                            </p>{subText}
                         </div>
                         <div className="md:w-1/3 ml-auto mt-auto">
                             <Image
