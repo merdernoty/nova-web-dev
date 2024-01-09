@@ -16,6 +16,7 @@ const Footer = () => (
 				items-center
 				text-lg
 				content-stretch
+				lg:content-center
 				flex-wrap
 				pt-12
 				pb-20
@@ -49,7 +50,7 @@ const Footer = () => (
 					</Link>
 				</li>
 			</ul>
-			<Link href='/#Copyright' className='text-center grow text-base'>
+			<Link href='/#Copyright' className='text-center text-base'>
 				&copy; 2023 Nova Developers Co. All Rights Reserved
 			</Link>
 		</Container>

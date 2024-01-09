@@ -56,9 +56,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={clsx(montserrat.variable, nunito_sans.variable)}>
+			<body className={clsx(montserrat.variable, nunito_sans.variable, 'relative block z-0')}>
 				<Header />
-				<main className={`pt-[${headerHeight}]`}>{children}</main>
+				<main className='z-0'>{children}</main>
 				<Footer />
 			</body>
 		</html>

@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
-import ProjectCard, { TProjectCardProps } from './projectCard/ProjectCard'
+import ProjectCard, { IProjectCardProps } from './projectCard/ProjectCard'
 
 type TProjectsProps = {
-	projects?: TProjectCardProps[]
+	projects?: IProjectCardProps[]
 }
 
 const Projects: FC<TProjectsProps> = ({ projects }) => (

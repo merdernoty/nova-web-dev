@@ -2,36 +2,34 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
-type TProjectCardProps = {
+export interface IProjectCardProps {
 	imageUrl: string
 	title: string
 	description: string
+	href?: string
 }
 
-const ProjectCard: FC<TProjectCardProps> = ({
+const ProjectCard: FC<IProjectCardProps> = ({
 	imageUrl,
 	title,
-	description
+	description,
+	href = ''
 }) => (
-	<Link
-		href={'/'}
-		className='bg-customGrey p-4 rounded-md shadow-md text-white mx-auto max-w-screen-sm'
-	>
-		<div className='overflow-hidden max-h-60 mb-4'>
+	<div className='bg-customGrey bg-opacity-10 p-4 rounded-md shadow-md text-white mx-auto max-w-screen-sm'>
+		<Link href={href} className='overflow-hidden max-h-60 mb-4 block'>
 			<Image
-				className='w-full h-full object-cover object-center rounded-t-md'
+				className='w-full h-full object-cover object-center rounded-t-md hover:scale-110 transition duration-300'
 				width={600}
 				height={300}
 				src={imageUrl}
 				alt={title}
 			/>
-		</div>
+		</Link>
 		<h2 className='text-xl font-semibold mb-2'>{title}</h2>
 		<p className='text-gray-300 overflow-hidden overflow-ellipsis whitespace-normal'>
 			{description}
 		</p>
-	</Link>
+	</div>
 )
 
 export default ProjectCard
-export type { TProjectCardProps }
