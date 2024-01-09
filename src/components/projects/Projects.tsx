@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard, {ProjectCardProps} from '@/app/components/projects/projectCard/ProjectCard';
+import ProjectCard, {ProjectCardProps} from "@/components/projects/projectCard/ProjectCard";
 
 interface ProjectsProps {
     projects?: ProjectCardProps[];
