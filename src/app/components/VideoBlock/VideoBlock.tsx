@@ -6,7 +6,7 @@ interface VideoBlockProps {
 
 const VideoBlock = ({ mainText, subText, videoSrc }: VideoBlockProps) => {
 	return (
-		<div className='flex flex-col max-w-[1200px] px-6 md:px-10 mb-[140px] md:mb-[150px]'>
+		<div className='flex flex-col w-full  md:px-10 mb-[140px] md:mb-[150px]'>
 			<div className='flex flex-col md:flex-row gap-[30px] md:gap-6 mb-[50px]'>
 				<h2 className='flex-1 text-4xl lg:text-5xl xl:text-6xl leading-[54px] lg:leading-[70px] font-bold text-white'>
 					{mainText}
@@ -17,7 +17,7 @@ const VideoBlock = ({ mainText, subText, videoSrc }: VideoBlockProps) => {
 			</div>
 
 			<video
-				width='1200'
+				width='1260'
 				height='670'
 				controls={true}
 				autoPlay={false}
