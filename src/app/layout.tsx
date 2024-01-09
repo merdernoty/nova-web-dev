@@ -8,6 +8,7 @@ import Footer from '@/components/ui/Footer/Footer'
 import Header, { headerHeight } from '@/components/ui/Header/Header'
 
 import './globals.css'
+import Container from "@/components/Container/Container";
 
 // Montserrat 'regular', 'bold'
 const montserrat = Montserrat({
@@ -31,9 +32,9 @@ const nunito_sans = Nunito_Sans({
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Nova developers',
-		template: 'Nova developers | %s',
-		absolute: 'Nova developers'
+		default: 'Nova Developers',
+		template: 'Nova Developers | %s',
+		absolute: 'Nova Developers'
 	},
 	description: 'Best software developing',
 	// generator: 'Next.js',
@@ -63,9 +64,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					'relative block z-0'
 				)}
 			>
+
 				<Header />
 				<main className='z-0'>{children}</main>
 				<Footer />
+
 			</body>
 		</html>
 	)
