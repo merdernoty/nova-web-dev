@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import type {Metadata} from 'next'
 import {Montserrat, Nunito_Sans} from 'next/font/google'
 import {ReactNode} from 'react'
-import Header from './components/Header/index'
+import Header from './components/Header'
 
 import './globals.css'
 import Footer from "./components/Footer/Footer";

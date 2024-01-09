@@ -2,7 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Logo from '../Brand/Logo/Logo'
 
+import Container from '../Container/Container'
 const Footer = () => (
+    <Container>
     <footer className='w-full'>
         <div className='
         flex
@@ -43,6 +45,7 @@ const Footer = () => (
             </Link>
         </div>
     </footer>
+    </Container>
 )
 
-export default Footer
+export default Footer;
