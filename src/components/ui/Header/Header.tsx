@@ -12,7 +12,7 @@ const Header: FC = () => {
 		<>
 			<header
 				className={`w-full fixed bg-customBlack bg-opacity-75 z-10`}
-				style={{height: headerHeight}}
+				style={{ height: headerHeight }}
 			>
 				<Container additionalStyles='flex py-5 justify-between items-center'>
 					<Logo />
@@ -21,7 +21,10 @@ const Header: FC = () => {
 				</Container>
 			</header>
 			{/* Header divider */}
-			<div className={`relative block w-full`} style={{height: headerHeight}}></div>
+			<div
+				className={`relative block w-full`}
+				style={{ height: headerHeight }}
+			></div>
 		</>
 	)
 }
