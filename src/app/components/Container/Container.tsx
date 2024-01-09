@@ -1,15 +1,26 @@
-import React from 'react';
+import clsx from 'clsx'
 
-interface Container {
-    children: React.ReactNode;
+import { CSSProperties, FC, ReactNode } from 'react'
+
+type TContainer = {
+    children: ReactNode
+    additionalStyles?: string
+    style?: CSSProperties
 }
 
-const Container: React.FC<Container> = ({ children }) => {
+const Container: FC<TContainer> = ({
+                                       children,
+                                       additionalStyles = '',
+                                       style = {}
+                                   }) => {
     return (
-        <div className="w-full max-w-screen-xl mx-auto">
+        <div
+            className={clsx('max-w-screen-xl mx-auto px-5', additionalStyles)}
+            style={style}
+        >
             {children}
         </div>
-    );
-};
+    )
+}
 
-export default Container;
+export default Container
