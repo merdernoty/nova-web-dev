@@ -1,16 +1,46 @@
+'use client'
 import React from 'react';
-import ProjectCard, {ProjectCardProps} from "./projectCard/ProjectCard";
+import {Autoplay, Pagination, Navigation} from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+
 
 interface ProjectsProps {
     projects?: ProjectCardProps[];
 }
 
-const Projects: React.FC<ProjectsProps> = ({projects}) => (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects?.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-        ))}
-    </div>
-);
+// import {Grid} from 'swiper/modules';
+import ProjectCard, {ProjectCardProps} from "@/app/components/projects/projectCard/ProjectCard";
 
-export default Projects;
+export default function Projects({projects}: any) {
+    return (
+        <div >
+            <Swiper
+                grid={{
+                    rows: 1,
+                }}
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 30000,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className=" w-full"
+                slidesPerView={2}
+            >
+                {projects?.map((project: ProjectCardProps, index: number) => (
+                    <SwiperSlide key={index}>
+                        <ProjectCard {...project} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
+    );
+}
