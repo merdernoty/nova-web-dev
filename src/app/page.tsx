@@ -1,11 +1,11 @@
-import ButtonContact from "./components/Header/ButtonContact";
-import Header from "./components/Header/HeaderText";
-import Logo from "./components/Header/Logo";
+import projectsData from '@/components/data/projects.json'
+import Container from '@/components/ui/Container/Container'
+import Projects from '@/components/ui/projects/Projects'
 
 export default function Home() {
-  return (
-    <div>
-      {/* Enter your code here */}
-    </div>
-  );
+	return (
+		<Container>
+			<Projects projects={projectsData} />
+		</Container>
+	)
 }
