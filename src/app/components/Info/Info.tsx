@@ -20,9 +20,9 @@ const Info: React.FC<InfoProps> = ({ mainText, subText }) =>{
                         </div>
                         <div className="md:w-1/3 ml-auto mt-auto">
                             <Image
-                                width={400}
+                                width={500}
                                 height={500}
-                                src="/img/gregas.jpg"
+                                src="/img/mainImage.jpg"
                                 alt="Изображение"
                                 className="w-full h-auto"
                             />
