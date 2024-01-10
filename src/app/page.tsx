@@ -1,5 +1,6 @@
 import Container from './components/Container/Container'
 import Info from './components/Info/Info'
+import Team from './components/Team/Team'
 import VideoBlock from './components/VideoBlock/VideoBlock'
 import infoData from './components/data/infoData.json'
 import projectsData from './components/data/projects.json'
@@ -15,6 +16,7 @@ export default function Home() {
 				subText={videoBlockData.subText}
 				videoSrc={videoBlockData.videoSrc}
 			/>
+			<Team/>
 			<Projects projects={projectsData} />
 		</Container>
 	)

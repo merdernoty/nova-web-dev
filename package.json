@@ -10,6 +10,7 @@
 		"pretty": "prettier --write --cache --cache-location .cache/.prettiercache ./src/**/*.{js,jsx,mjs,ts,tsx,css,scss,sass,less}"
 	},
 	"dependencies": {
+		"@octokit/rest": "^20.0.2",
 		"clsx": "^2.1.0",
 		"next": "14.0.4",
 		"react": "^18",
