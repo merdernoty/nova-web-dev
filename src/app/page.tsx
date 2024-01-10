@@ -1,4 +1,3 @@
-import Contact from "./components/Contact/Contact";
 import Container from '../components/Container/Container'
 import Info from '../components/Info/Info'
 import Team from '../components/Team/Team'
@@ -25,7 +24,7 @@ export default function Home() {
 			<Team/>
 			<Projects projects={projectsData} />
 		</Container>
-		<Contact/>
+
 		</>
 	)
 }
