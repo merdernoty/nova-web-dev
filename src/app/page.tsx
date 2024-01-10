@@ -6,25 +6,24 @@ import infoData from '../components/data/infoData.json'
 import projectsData from '../components/data/projects.json'
 import videoBlockData from '../components/data/videoBlockData.json'
 import Projects from '../components/projects/Projects'
-import ServiceBlock from './components/ServiceBlock/ServiceBlock'
-
+import ServiceBlock from '../components/ServiceBlock/ServiceBlock'
 
 
 export default function Home() {
-	return (
-		<>
-		<Container>
-			<Info mainText={infoData.mainText} subText={infoData.subText} />
-			<VideoBlock
-				mainText={videoBlockData.mainText}
-				subText={videoBlockData.subText}
-				videoSrc={videoBlockData.videoSrc}
-			/>
-			<ServiceBlock />
-			<Team/>
-			<Projects projects={projectsData} />
-		</Container>
+    return (
+        <>
+            <Container>
+                <Info mainText={infoData.mainText} subText={infoData.subText}/>
+                <VideoBlock
+                    mainText={videoBlockData.mainText}
+                    subText={videoBlockData.subText}
+                    videoSrc={videoBlockData.videoSrc}
+                />
+                <ServiceBlock/>
+                <Team/>
+                <Projects projects={projectsData}/>
+            </Container>
 
-		</>
-	)
+        </>
+    )
 }
