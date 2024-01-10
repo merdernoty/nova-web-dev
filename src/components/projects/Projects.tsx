@@ -10,9 +10,7 @@ import 'swiper/css/pagination';
 interface ProjectsProps {
     projects?: ProjectCardProps[];
 }
-
-// import {Grid} from 'swiper/modules';
-import ProjectCard, {ProjectCardProps} from "@/app/components/projects/projectCard/ProjectCard";
+import ProjectCard, {ProjectCardProps} from "./projectCard/ProjectCard";
 
 export default function Projects({projects}: any) {
     return (
