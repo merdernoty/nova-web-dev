@@ -1,3 +1,4 @@
+
 import Container from '../components/Container/Container'
 import Info from '../components/Info/Info'
 import Team from '../components/Team/Team'
@@ -6,6 +7,8 @@ import infoData from '../components/data/infoData.json'
 import projectsData from '../components/data/projects.json'
 import videoBlockData from '../components/data/videoBlockData.json'
 import Projects from '../components/projects/Projects'
+import ServiceBlock from './components/ServiceBlock/ServiceBlock'
+
 
 export default function Home() {
 	return (
@@ -16,6 +19,7 @@ export default function Home() {
 				subText={videoBlockData.subText}
 				videoSrc={videoBlockData.videoSrc}
 			/>
+			<ServiceBlock />
 			<Team/>
 			<Projects projects={projectsData} />
 		</Container>
