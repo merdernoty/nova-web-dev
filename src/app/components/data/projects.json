@@ -1,26 +1,26 @@
 [
 	{
 		"imageUrl": "/img/gregas.jpg",
-		"title": "Project 1",
+		"title": "Gregas Shop",
 		"href": "/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+		"description": "Our cutting-edge online store, where we seamlessly blend the latest technologies to provide you with an immersive shopping experience. Our user-friendly, adaptive interface ensures intuitive navigation, making your online journey as smooth as possible. Experience modern convenience as we redefine your online shopping."
 	},
 	{
-		"imageUrl": "/img/gregas.jpg",
-		"title": "Project 2",
+		"imageUrl": "/img/gameblog.jpg",
+		"title": "Gaming Blog",
 		"href": "/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+		"description": "Our gaming blog, a digital haven for both gamers and enthusiasts alike. Explore a wealth of intriguing and valuable information tailored for gamers and everyday users alike. Immerse yourself in a captivating online experience, where you can not only enhance your gaming knowledge but also enjoy quality time on our site."
 	},
 	{
-		"imageUrl": "/img/gregas.jpg",
-		"title": "Project 3",
+		"imageUrl": "/img/symki.jpg",
+		"title": "Bag Store",
 		"href": "/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+		"description": " Our bag store, a digital haven for fashion enthusiasts. Explore a trove of chic and practical information for bag enthusiasts and everyday users alike. Immerse yourself in a seamless online experience, where our quality and user-friendly interface adapts flawlessly to all devices, integrating cutting-edge  technologies."
 	},
 	{
-		"imageUrl": "/img/gregas.jpg",
-		"title": "Project 4",
+		"imageUrl": "/img/developblog.jpg",
+		"title": "Development Blog",
 		"href": "/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae ab omnis culpa doloremque quam molestiae deleniti, sequi, fuga harum eaque atque similique modi qui neque quas sint."
+		"description": "Our developers' blog, where cutting-edge insights seamlessly blend with the latest tech trends, offering an immersive learning experience. Our user-friendly interface facilitates intuitive navigation. Embrace modern convenience as we redefine your exploration of the developer's world."
 	}
 ]
