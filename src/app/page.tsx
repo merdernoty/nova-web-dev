@@ -1,4 +1,4 @@
-
+import Contact from "./components/Contact/Contact";
 import Container from '../components/Container/Container'
 import Info from '../components/Info/Info'
 import Team from '../components/Team/Team'
@@ -10,8 +10,10 @@ import Projects from '../components/projects/Projects'
 import ServiceBlock from './components/ServiceBlock/ServiceBlock'
 
 
+
 export default function Home() {
 	return (
+		<>
 		<Container>
 			<Info mainText={infoData.mainText} subText={infoData.subText} />
 			<VideoBlock
@@ -23,5 +25,7 @@ export default function Home() {
 			<Team/>
 			<Projects projects={projectsData} />
 		</Container>
+		<Contact/>
+		</>
 	)
 }
