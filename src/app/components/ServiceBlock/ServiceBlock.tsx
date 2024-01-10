@@ -8,7 +8,7 @@ interface ServiceBlockProps {
 
 const ServiceBlock = () => {
 	return (
-		<div className='flex flex-col items-center gap-[50px] w-full md:px-10 mb-[474px]'>
+		<div className='flex flex-col items-center gap-[50px] w-full mb-[474px]'>
 			<h2 className='max-w-[695px] text-center text-4xl lg:text-5xl xl:text-6xl leading-[54px] lg:leading-[70px] font-bold text-white'>
 				The Service We Provide For You
 			</h2>
