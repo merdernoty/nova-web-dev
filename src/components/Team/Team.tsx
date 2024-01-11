@@ -34,7 +34,7 @@ function Team() {
 						<h2 className='text-2xl font-bold m-4 '>
 							{teamSlug.toUpperCase()}
 						</h2>
-						<div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 '>
+						<div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 px-3 '>
 							{teamData[teamSlug].map((member: ITeam) => (
 								<div key={member.id}>
 									<div className='overflow-hidden max-h-80 mb-4'>
@@ -43,7 +43,7 @@ function Team() {
 											height={400}
 											src={member.avatar_url}
 											alt={member.login}
-											className='w-full h-full object-cover object-center rounded-t-md'
+											className='w-full h-full object-cover object-center rounded-t-md '
 											style={{ padding: 0 }}
 										/>
 									</div>
