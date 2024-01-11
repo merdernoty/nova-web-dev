@@ -23,19 +23,18 @@ const BurgerBtn = () => {
 			>
 				<g
 					fill='#ffffff'
-					fill-rule='nonzero'
+					fillRule='nonzero'
 					stroke='none'
-					stroke-width='1'
-					stroke-linecap='butt'
-					stroke-linejoin='miter'
-					stroke-miterlimit='10'
-					stroke-dasharray=''
-					stroke-dashoffset='0'
-					font-family='none'
-					font-weight='none'
-					font-size='none'
-					text-anchor='none'
-					
+					strokeWidth='1'
+					strokeLinecap='butt'
+					strokeLinejoin='miter'
+					strokeMiterlimit='10'
+					strokeDasharray=''
+					strokeDashoffset='0'
+					fontFamily='none'
+					fontWeight='none'
+					fontSize='none'
+					textAnchor='none'
 				>
 					<g transform='scale(5.12,5.12)'>
 						<path d='M0,9v2h50v-2zM0,24v2h50v-2zM0,39v2h50v-2z'></path>
