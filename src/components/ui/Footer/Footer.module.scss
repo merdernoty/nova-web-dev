@@ -1,0 +1,11 @@
+.footer {
+	&__container {
+		@apply flex justify-between flex-col mx-auto items-center text-lg content-stretch lg:content-center flex-wrap pt-12 pb-20 gap-y-14 lg:flex-row lg:gap-y-10;
+	}
+	&__list {
+		@apply flex flex-col items-center gap-y-14 mt-6 *:font-bold *:text-customGrey *:sm:mx-5 lg:mx-5 lg:mt-0 sm:flex-row;
+	}
+	&__copyright {
+		@apply text-center text-base;
+	}
+}

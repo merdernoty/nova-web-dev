@@ -1,12 +1,14 @@
-interface VideoBlockProps {
+import { FC } from 'react'
+
+type TVideoBlockProps = {
 	mainText: string
 	subText: string
 	videoSrc: string
 }
 
-const VideoBlock = ({ mainText, subText, videoSrc }: VideoBlockProps) => {
+const VideoBlock: FC<TVideoBlockProps> = ({ mainText, subText, videoSrc }) => {
 	return (
-		<div className='flex flex-col w-full  md:px-10 mb-[140px] md:mb-[150px]'>
+		<div className='flex flex-col w-full md:px-10 mb-[140px] md:mb-[150px]'>
 			<div className='flex flex-col md:flex-row gap-[30px] md:gap-6 mb-[50px]'>
 				<h2 className='flex-1 text-4xl lg:text-5xl xl:text-6xl leading-[54px] lg:leading-[70px] font-bold text-white'>
 					{mainText}

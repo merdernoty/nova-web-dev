@@ -1,0 +1,5 @@
+.header {
+	&__contactBtn {
+		@apply py-2.5 px-10 border border-white rounded-lg text-white bg-transparent hover:bg-indigo-700 transition duration-300 hidden lg:block;
+	}
+}
