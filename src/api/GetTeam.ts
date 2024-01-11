@@ -2,7 +2,7 @@ import { Octokit } from "@octokit/rest";
 
 const getTeam = async () => {
     const octokit = new Octokit({
-        auth: "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", // Используйте переменную окружения для хранения токена
+        auth: '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', // Используйте переменную окружения для хранения токена
     });
 
     try {
