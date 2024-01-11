@@ -1,13 +1,11 @@
 import { Octokit } from '@octokit/rest'
 
 const getTeam = async () => {
-	const octokit = new Octokit({
-		// process.env.GITHUB_TOKEN
-		auth: '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'
-	})
+    const octokit = new Octokit({
+        auth: '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', // Используйте переменную окружения для хранения токена
+    });
 	try {
-		const teams: string[] = ['i-team', 'the-boyz', 'vlados-team']
-
+		const teams: any = {}
 		const teamMembers: any = {}
 
 		for (const team_slug of teams) {
