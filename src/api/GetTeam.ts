@@ -1,9 +1,8 @@
 import { Octokit } from "@octokit/rest";
 
 const getTeam = async () => {
-    const token = process.env.GITHUB_TOKEN 
     const octokit = new Octokit({
-        auth: token , // Используйте переменную окружения для хранения токена
+        auth:  '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', // Используйте переменную окружения для хранения токена
     });
 
     try {
