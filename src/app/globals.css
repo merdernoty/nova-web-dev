@@ -11,4 +11,7 @@
 	html {
 		background-color: theme('colors.customBlack');
 	}
+	body.fixed {
+		overflow: hidden;
+	}
 }

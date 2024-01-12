@@ -1,19 +1,15 @@
+import { FC } from 'react'
+
 import ServiceItem from './ServiceItem'
 
-interface ServiceBlockProps {
-	mainText: string
-	subText: string
-	videoSrc: string
-}
-
-const ServiceBlock = () => {
+const ServiceBlock: FC = () => {
 	return (
-		<div className='flex flex-col items-center gap-[50px] w-full mb-[474px]'>
-			<h2 className='max-w-[695px] text-center text-4xl lg:text-5xl xl:text-6xl leading-[54px] lg:leading-[70px] font-bold text-white'>
+		<div className='flex flex-col items-center gap-12 w-full min-h-screen'>
+			<h2 className='max-w-[695px] text-center text-4xl lg:text-5xl xl:text-6xl leading-13 lg:leading-[70px] font-bold text-white'>
 				The Service We Provide For You
 			</h2>
 
-			<div className='flex flex-col lg:flex-row justify-center items-baseline gap-[24px]'>
+			<div className='flex flex-col lg:flex-row justify-center items-baseline gap-6'>
 				<ServiceItem
 					icon='/icons/development.svg'
 					mainText='Development'
