@@ -47,17 +47,17 @@ const MyModal: FC<MyModalProps> = () => {
                 <div className='flex justify-between items-center gap-8'>
                     <Link
                         href="https://www.linkedin.com/company/nova-developers-co/" target={"_blank"}>
-                        <Image src="/icons/linked.svg" alt="LinkedIn" width={50} height={50}/>
+                        <Image src="/icons/linkedIn.svg" alt="LinkedIn" width={50} height={50}/>
                     </Link>
                     <Link
                         href="https://www.instagram.com/nova_it_developers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
                         target={"_blank"}>
-                        <Image src="/icons/inst.svg" alt="LinkedIn" width={50} height={50}/>
+                        <Image src="/icons/inst.svg" alt="instagram" width={50} height={50}/>
                     </Link>
                     <a
                         href="mailto:developersnova1@gmail.com"
                         target={"_blank"}>
-                        <Image src="/icons/mail.svg" alt="LinkedIn" width={50} height={50}/>
+                        <Image src="/icons/mail.svg" alt="mail" width={50} height={50}/>
                     </a>
 
 
