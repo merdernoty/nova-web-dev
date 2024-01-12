@@ -5,7 +5,7 @@ import styles from "@/components/ui/Header/Header.module.scss";
 function Contact() {
 	return (
 		<div>
-			<div className='flex justify-between items-center mt-10 py-12'>
+			<div className='flex justify-between items-center mt-10 py-12 z-100'>
 				<span className='text-xl md:text-4xl font-bold text-white w-[512px]'>
 					Contact us for the service you want to use
 				</span>
