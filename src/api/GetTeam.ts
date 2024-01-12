@@ -2,13 +2,13 @@ import { Octokit } from "@octokit/rest";
 
 const getTeam = async () => {
     const octokit = new Octokit({
-        auth: "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", // Используйте переменную окружения для хранения токена
+        auth:  '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', // Используйте переменную окружения для хранения токена
     });
 
     try {
-        const teams= ['i-team', 'the-boyz', 'vlados-team'];
+        const teams: any[] = ['i-team', 'the-boyz', 'vlados-team'];
 
-        const teamMembers = [];
+        const teamMembers: any = {};
 
         for (const team_slug of teams) {
             const response = await octokit.teams.listMembersInOrg({
@@ -16,7 +16,7 @@ const getTeam = async () => {
                 team_slug,
             });
 
-            teamMembers.push(...response.data);
+            teamMembers[team_slug] = response.data;
         }
 
         return teamMembers;
