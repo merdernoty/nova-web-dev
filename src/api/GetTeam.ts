@@ -1,34 +1,34 @@
-import { Octokit } from '@octokit/rest'
+import { Octokit } from "@octokit/rest";
 
 const getTeam = async () => {
     const octokit = new Octokit({
         auth:  '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', // Используйте переменную окружения для хранения токена
     });
-	try {
-		const teams: any = {}
-		const teamMembers: any = {}
 
-		for (const team_slug of teams) {
-			const response = await octokit.teams.listMembersInOrg({
-				org: 'NovaDevelopersCo',
-				team_slug
-			})
+    try {
+        const teams: any[] = ['i-team', 'the-boyz', 'vlados-team'];
 
-			teamMembers[team_slug] = response.data
-		}
+        const teamMembers: any = {};
 
-		return teamMembers
-	} catch (error: any) {
-		console.error(error.message)
+        for (const team_slug of teams) {
+            const response = await octokit.teams.listMembersInOrg({
+                org: 'NovaDevelopersCo',
+                team_slug,
+            });
 
-		if (error.status === 401) {
-			console.error(
-				'Unauthorized. Please check your credentials and permissions.'
-			)
-		}
+            teamMembers[team_slug] = response.data;
+        }
 
-		throw error
-	}
-}
+        return teamMembers;
+    } catch (error: any) {
+        console.error(error.message);
 
-export default getTeam
+        if (error.status === 401) {
+            console.error('Unauthorized. Please check your credentials and permissions.');
+        }
+
+        throw error;
+    }
+};
+
+export default getTeam;
