@@ -3,7 +3,7 @@
 import React, { FC, useContext } from 'react'
 import Menu from 'react-burger-menu/lib/menus/stack'
 
-import { BurgerContext } from '@/components/context/burger-context'
+import { BurgerContext } from '@/components/context/AppContext'
 
 import HeaderLinks from '../Header/HeaderLinks'
 import './Burger.css'

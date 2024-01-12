@@ -2,7 +2,7 @@
 
 import { useContext } from 'react'
 
-import { BurgerContext } from '@/components/context/burger-context'
+import { BurgerContext } from '@/components/context/AppContext'
 
 const BurgerBtn = () => {
 	const [isOpen, setIsOpen] = useContext(BurgerContext)
