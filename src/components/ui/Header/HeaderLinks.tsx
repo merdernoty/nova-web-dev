@@ -6,7 +6,7 @@ import { FC } from 'react'
 const Links = [
 	{
 		name: 'Home',
-		href: '/#Home'
+		href: '/'
 	},
 	{
 		name: 'Services',

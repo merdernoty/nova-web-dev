@@ -1,5 +1,6 @@
 import React from 'react'
-import { EmailButton } from '../Email/Email'
+import ContactBtn from "@/components/ui/Header/ContactBtn";
+import styles from "@/components/ui/Header/Header.module.scss";
 
 function Contact() {
 	return (
@@ -8,9 +9,10 @@ function Contact() {
 				<span className='text-xl md:text-4xl font-bold text-white w-[512px]'>
 					Contact us for the service you want to use
 				</span>
-				<button className='p-1 ml-6 md:ml-0 md:p-2.5 my-8 border border-white rounded text-white bg-transparent hover:bg-indigo-700 transition duration-300'>
-                <EmailButton email="developersnova1@gmail.com" label="Contact us" />
-				</button>
+
+				<ContactBtn additionalStyles={[styles.header__contactBtn_contact_us ,styles.header__contactBtn]}/>
+
+
 			</div>
 		</div>
 	)
