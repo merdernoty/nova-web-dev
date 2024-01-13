@@ -1,4 +1,6 @@
+'use client'
+
 import { Dispatch, SetStateAction, createContext } from 'react'
 
-export const BurgerContext =
-	createContext<[boolean, Dispatch<SetStateAction<boolean>>]>(false)
+type TContext = [boolean, Dispatch<SetStateAction<boolean>>]
+export const BurgerContext = createContext<TContext>(null!)

@@ -4,10 +4,9 @@ import type { Metadata } from 'next'
 import { Montserrat, Nunito_Sans } from 'next/font/google'
 import { PropsWithChildren } from 'react'
 
-import Burger from '@/components/ui/Burger/Burger'
 import Footer from '@/components/ui/Footer/Footer'
 import Header from '@/components/ui/Header/Header'
-import BurgerContextProvider from '@/components/ui/burgerContextProvider'
+import BurgerContextProvider from '@/components/ui/BurgerContextProvider'
 
 import './globals.css'
 
@@ -79,15 +78,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
 					nunito_sans.variable,
 					'relative block z-0'
 				)}
-				id='page-wrap'
 			>
 				<BurgerContextProvider>
-					<Burger />
-					<div id='outer-container'>
-						<Header />
-						<main className='z-0'>{children}</main>
-						<Footer />
-					</div>
+					<Header />
+					<main className='z-0'>{children}</main>
+					<Footer />
 				</BurgerContextProvider>
 			</body>
 		</html>
