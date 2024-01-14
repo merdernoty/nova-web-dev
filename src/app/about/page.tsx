@@ -1,11 +1,14 @@
 import Image from 'next/image'
 
+import { SvgItem_2 } from '@/components/SvgComponents'
+import { Blur1, Blur2 } from '@/components/ui/Blur'
 import Container from '@/components/ui/Container/Container'
 import Team from '@/components/ui/Team/Team'
 
 export default function AboutPage() {
 	return (
 		<Container>
+			<Blur1 />
 			<section className='mt-12'>
 				<h2 className='text-4xl mb-4 font-semibold'>Our History</h2>
 				<div className='flex flex-col md:flex-row'>
@@ -30,6 +33,8 @@ export default function AboutPage() {
 					/>
 				</div>
 			</section>
+			<SvgItem_2 />
+			<Blur2 />
 			<div className='my-8'>
 				<Team />
 			</div>
