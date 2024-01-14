@@ -1,6 +1,7 @@
 import React from 'react'
-import ContactBtn from "@/components/ui/Header/ContactBtn";
-import styles from "@/components/ui/Header/Header.module.scss";
+
+import ContactBtn from '@/components/ui/Header/ContactBtn'
+import styles from '@/components/ui/Header/Header.module.scss'
 
 function Contact() {
 	return (
@@ -10,9 +11,12 @@ function Contact() {
 					Contact us for the service you want to use
 				</span>
 
-				<ContactBtn additionalStyles={[styles.header__contactBtn_contact_us ,styles.header__contactBtn]}/>
-
-
+				<ContactBtn
+					additionalStyles={[
+						styles.header__contactBtn_contact_us,
+						styles.header__contactBtn
+					]}
+				/>
 			</div>
 		</div>
 	)

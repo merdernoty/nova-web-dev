@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 
 import {SvgItem_1, SvgItem_2, SvgItem_3, SvgItem_4} from '@/components/SvgComponents'
@@ -19,6 +20,7 @@ export default function Home() {
 	return (
 		<>
 			<Container>
+
 				<Blur1 />
 				<SvgItem_1 />
 				<Info mainText={infoData.mainText} subText={infoData.subText} />
@@ -30,12 +32,14 @@ export default function Home() {
 					subText={videoBlockData.subText}
 					videoSrc={videoBlockData.videoSrc}
 				/>
+
                 <SvgItem_3/>
 				<Blur1 />
 				<ServiceBlock />
                 <SvgItem_4/>
 				<Projects projects={projectsData} />
 				<Blur2 />
+
 			</Container>
 			<div className='bg-gray-900 bg-opacity-45'>
 				<Container>
