@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import { FC, useContext, useEffect } from 'react'
 
-import { BurgerContext } from '@/components/context/burger-context'
+import { BurgerContext } from '@/components/context/AppContext'
 
 const Links = [
 	{
@@ -47,8 +47,8 @@ const HeaderLinks: FC = () => {
 			<nav
 				className={clsx(
 					'ease-in-out duration-300',
-					'bg-customBlack fixed top-0 right-0 h-screen w-3/4 max-w-sm flex items-center justify-center',
-					'sm:bg-transparent sm:h-auto sm:w-auto sm:relative sm:order-2 sm:max-w-auto sm:block',
+					'bg-customBlack fixed top-0 right-0 h-screen w-3/4 flex items-center justify-center',
+					'sm:bg-transparent sm:relative sm:h-auto sm:w-auto sm:order-2 sm:max-w-auto sm:block sm:translate-x-0',
 					isBurgerOpen ? 'translate-x-0' : 'translate-x-full'
 				)}
 			>
@@ -56,7 +56,7 @@ const HeaderLinks: FC = () => {
 					{Links.map((el, i) => (
 						<li
 							key={i}
-							className='items-stretch hover:text-customBlue text-lg transition duration-300'
+							className='items-stretch hover:text-customBlue text-lg transition duration-300 shrink-0'
 						>
 							<Link
 								href={el.href}
