@@ -8,7 +8,7 @@ interface InfoProps {
 const Info: FC<InfoProps> = ({ mainText, subText }) => {
 	return (
 		// !FIX this
-		<section style={{ minHeight: `100svh` }}>
+		<section style={{ minHeight: `60svh` }}>
 			<div className='sm:my-14'>
 				<div className='flex flex-col md:flex-row justify-between'>
 					<div className='md:w-1/2 md:pr-4 mb-4 md:mb-0'>

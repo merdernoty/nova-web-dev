@@ -5,7 +5,7 @@ import ServiceItem from './ServiceItem'
 const ServiceBlock: FC = () => {
 	return (
 		<div
-			className='flex flex-col items-center gap-12 w-full min-h-screen'
+			className='flex flex-col items-center gap-12 w-full h-1/3'
 			id='Services'
 		>
 			<h2 className='max-w-[695px] text-center text-4xl lg:text-5xl xl:text-6xl leading-13 lg:leading-[70px] font-bold text-white'>
