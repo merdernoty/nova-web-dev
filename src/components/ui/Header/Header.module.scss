@@ -1,12 +1,10 @@
 .header {
 	&__contactBtn {
-		@apply py-2.5 px-10 border border-white rounded-lg text-white bg-transparent hover:bg-indigo-700 transition duration-300 ;
+		@apply py-2.5 px-10 border border-white rounded-lg text-white bg-transparent hover:bg-indigo-700 transition duration-300;
 		&_header {
-			@apply hidden lg:block
+			@apply hidden md:block order-last;
 		}
 		&_contact_us {
-
 		}
 	}
-
 }

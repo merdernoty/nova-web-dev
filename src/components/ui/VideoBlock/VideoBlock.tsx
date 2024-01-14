@@ -19,6 +19,7 @@ const VideoBlock: FC<TVideoBlockProps> = ({ mainText, subText, videoSrc }) => {
 			</div>
 
 			<video
+			className='rounded-md '
 				width='1260'
 				height='670'
 				controls={true}

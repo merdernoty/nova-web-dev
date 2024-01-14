@@ -17,7 +17,9 @@ type TProjectsProps = {
 export default function Projects({ projects }: TProjectsProps) {
 	return (
 		<section id='Our-Project'>
-			<h2 className='text-3xl font-bold text-center mb-10'>Our Project</h2>
+			<h2 className='text-3xl font-bold text-center mb-10'>
+				Our Project
+			</h2>
 			<Swiper
 				grid={{
 					rows: 1

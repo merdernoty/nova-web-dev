@@ -1,15 +1,14 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { headerHeightNum } from '../Header/Header'
-
 interface InfoProps {
 	mainText: string
 	subText: string
 }
 const Info: FC<InfoProps> = ({ mainText, subText }) => {
 	return (
-		<section style={{ minHeight: `${100 - headerHeightNum}vh` }}>
+		// !FIX this
+		<section style={{ minHeight: `60svh` }}>
 			<div className='sm:my-14'>
 				<div className='flex flex-col md:flex-row justify-between'>
 					<div className='md:w-1/2 md:pr-4 mb-4 md:mb-0'>
