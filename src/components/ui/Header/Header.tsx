@@ -3,8 +3,9 @@ import Container from '../Container/Container'
 import BurgerBtn from './BurgerBtn'
 import ContactBtn from './ContactBtn'
 import HeaderLinks from './HeaderLinks'
+import styles from './Header.module.scss'
 
-export default function Home() {
+export default function Header() {
 	return (
 		<>
 			<header

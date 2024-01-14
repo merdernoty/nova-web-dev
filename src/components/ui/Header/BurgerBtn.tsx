@@ -2,7 +2,7 @@
 
 import { useContext } from 'react'
 
-import { BurgerContext } from '@/components/context/burger-context'
+import { BurgerContext } from '@/components/context/AppContext'
 
 import BurgerIcon from '../icons/BurgerIcon'
 import CloseCrossIcon from '../icons/CloseCrossIcon'
